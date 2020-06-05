@@ -19,3 +19,13 @@ for _,name in ipairs(complay.itech.ops.names) do
     names= name.."|"..names
 end
 print("names:",names)
+
+
+function Fbnq(n)
+    if n ==1 or n==2 then
+        return n
+    end
+    return Fbnq(n-1)+(n-2)
+end
+
+print("n",Fbnq(10))
